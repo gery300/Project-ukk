@@ -1,12 +1,12 @@
 <?php
 // Mengambil ID dari URL jika ada
-include_once "../models/SupplierModel.php"; // Pastikan ini sudah benar
+include_once "../models/SupplierModel.php";
 
-// Cek apakah ID ada dalam URL
+// Mengecek apakah ID ada dalam URL
 if (isset($_GET['id_supplier'])) 
-    $id = $_GET['id_supplier']; // Ambil ID dari URL
+    $id = $_GET['id_supplier']; // Mengambil ID dari URL
     $supplierModel = new SupplierModel();
-    $supplierdata = $supplierModel->getSupplierById($id_supplier); // Ambil data berdasarkan ID
+    $supplierdata = $supplierModel->getSupplierById($id_supplier); // Mengambil data berdasarkan ID
 ?>
 
 <!DOCTYPE html>
